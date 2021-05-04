@@ -2,5 +2,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!-- Your View Logic Here -->
-<h1>Implement Your View Logic</h1>
+<h1 th:text="${newRoll.num}"></h1>
 
