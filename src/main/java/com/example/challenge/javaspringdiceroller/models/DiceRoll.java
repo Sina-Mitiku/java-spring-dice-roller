@@ -5,18 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DiceRoll {
-  private int num;
-
-//  public int getRandom() {
-//    return random;
-//  }
-
-  public void setNum(int num) {
-    this.num = num;
-  }
-
-  public int getNum(int min, int max) {
+  public int getRandomNumber() {
     Random random = new Random();
-    return random.nextInt((max-min) +1) +min;
+    int number = random.nextInt((6) + 1);
+    return number;
   }
 }
